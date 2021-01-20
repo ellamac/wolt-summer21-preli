@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Carousel from './components/Carousel.js';
 
-function App() {
+const App = props => {
+  const [discoveryPageData, setDiscoveryPageData] = useState([]);
+
+  /* get data from ../public/discovery_page.json */
+  const getData = () => {
+    fetch('discovery_page.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      }
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+        setDiscoveryPageData(myJson.sections);
+      });
+  };
+
+  /* after render, getData */
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* checking that state is not empty */}
+      {/* mapping discovery page's data into carousels */}
+
+      {discoveryPageData &&
+        discoveryPageData.length > 0 &&
+        discoveryPageData.map(item => (
+          <Carousel key={item.title} restaurants={item.restaurants} title={item.title} />
+        ))}
     </div>
   );
-}
+};
 
 export default App;

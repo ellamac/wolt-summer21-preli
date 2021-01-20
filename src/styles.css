@@ -1,0 +1,125 @@
+html,
+body,
+#root {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+/* variables for most used colors and fonts */
+:root {
+  --main-dark-color: #242627;
+  --main-light-color: #f9f8f7;
+  --main-grey: #5c6165;
+  --main-font-family: 'Trebuchet MS';
+}
+
+.App {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+}
+
+/*------ CAROUSEL & REACT-SLICK -------------------------*/
+
+/* container for title and carousel */
+.carousel-container {
+  padding: 10px 0;
+  margin: 15px 20px;
+}
+
+/* Slider-element aka the whole carousel */
+.slick-slider {
+  width: 90%;
+  height: 160px;
+  margin: 5px auto;
+}
+
+/* arrows' color */
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(167, 167, 167) !important;
+}
+
+/* padding between slides */
+.slick-slide {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+/*------ CARDS -------------------------*/
+
+.card {
+  position: relative;
+  width: 100% !important;
+  height: 150px !important;
+}
+
+.card-image,
+.card-content {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+}
+
+.card-content {
+  z-index: 100;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  align-content: baseline;
+}
+
+/* Card canvas-background */
+canvas {
+  border-radius: 10px;
+}
+
+/*------ TEXTS -------------------------*/
+
+.title {
+  color: var(--main-dark);
+  margin: 40px 10px 0 10px;
+}
+
+.name,
+.status,
+.title {
+  font-family: var(--main-font-family);
+  margin: 0 15px 2px;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--main-light-color);
+  margin-bottom: 10px;
+}
+
+.status {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------ ONLINE-STATUS STYLING -------- */
+
+/* Turn all card contents into grayscale */
+.card.offline {
+  filter: grayscale(100%);
+}
+
+/* font-color when offline */
+.status.offline {
+  color: var(--main-grey);
+}
+
+/* font-color when online */
+.status.online {
+  color: var(--main-light-color);
+}
