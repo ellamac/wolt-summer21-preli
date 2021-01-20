@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/wolt-summer21-preli/static/css/main.e7dd16d7.chunk.css",
+    "main.js": "/wolt-summer21-preli/static/js/main.03d05bf7.chunk.js",
+    "main.js.map": "/wolt-summer21-preli/static/js/main.03d05bf7.chunk.js.map",
+    "runtime-main.js": "/wolt-summer21-preli/static/js/runtime-main.6c1a965f.js",
+    "runtime-main.js.map": "/wolt-summer21-preli/static/js/runtime-main.6c1a965f.js.map",
+    "static/css/2.09079057.chunk.css": "/wolt-summer21-preli/static/css/2.09079057.chunk.css",
+    "static/js/2.9d016e1d.chunk.js": "/wolt-summer21-preli/static/js/2.9d016e1d.chunk.js",
+    "static/js/2.9d016e1d.chunk.js.map": "/wolt-summer21-preli/static/js/2.9d016e1d.chunk.js.map",
+    "index.html": "/wolt-summer21-preli/index.html",
+    "static/css/2.09079057.chunk.css.map": "/wolt-summer21-preli/static/css/2.09079057.chunk.css.map",
+    "static/css/main.e7dd16d7.chunk.css.map": "/wolt-summer21-preli/static/css/main.e7dd16d7.chunk.css.map",
+    "static/js/2.9d016e1d.chunk.js.LICENSE.txt": "/wolt-summer21-preli/static/js/2.9d016e1d.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/wolt-summer21-preli/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c1a965f.js",
+    "static/css/2.09079057.chunk.css",
+    "static/js/2.9d016e1d.chunk.js",
+    "static/css/main.e7dd16d7.chunk.css",
+    "static/js/main.03d05bf7.chunk.js"
+  ]
+}
