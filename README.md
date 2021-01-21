@@ -12,7 +12,7 @@ For now I believe the current solution meets the assignments requirements but if
 
 I really enjoyed solving this assignment and had fun with the pretty visuals Blurhash creates! Thank you!
 
-If possible, it would be really helpful and appreciated to get any feedback of my code :) 
+This is the first ever preliminary task for a job application process I have done. If possible, it would be really helpful and appreciated to get any feedback of my code and my approach to this assignment. 
 
 Thank you!
 Ella Mäkelä
