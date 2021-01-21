@@ -1,6 +1,7 @@
 # Frontend task of Wolt Summer 2021 Engineering Internship Assignment 
 
 Demo: https://ellamac.github.io/wolt-summer21-preli/
+
 The mockup discovery_page.json file is in the 'public' directory.
 
 Hi! This is my version of Wolt's Summer 2021 Frontend internship preliminary task. 
